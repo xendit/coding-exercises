@@ -22,6 +22,7 @@ Some kinds of external dependencies may include:
 1. Ensure that `node >= 8.6` is installed
 2. Run `npm install`
 3. Run `npm test`, all tests should be passing
+4. Run `npm report` to see the coverage reports
 
 ## Exercise
 
