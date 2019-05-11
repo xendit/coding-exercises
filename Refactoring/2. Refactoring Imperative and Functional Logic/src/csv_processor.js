@@ -54,7 +54,7 @@ class CSVProcessor {
             const result = files.reduce((combinedLines, file) => {
                 let fileLines = file.split('\n');
 
-                if (fileLines.length === 0) {
+                if (fileLines.length <= 1) {
                     return combinedLines;
                 }
 
