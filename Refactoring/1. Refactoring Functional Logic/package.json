@@ -1,0 +1,31 @@
+{
+  "name": "refactoring-exercise-1",
+  "version": "1.0.0",
+  "description": "An exercise in refactoring",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test:lint": "eslint .",
+    "test:unit": "nyc mocha tests",
+    "test": "npm run test:lint && npm run test:unit",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Xendit"
+  ],
+  "author": "Bo",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1"
+  }
+}
