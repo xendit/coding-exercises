@@ -48,3 +48,5 @@ In order to achieve these goals, we need to go through a few steps:
 #### Achieving Line Coverage
 
 Our first task is to write enough tests so we can reach 100% line coverage. Try to write the fewest number of tests to achieve this.
+
+Reference the fixtures in the tests folder to use in your tests when relevant.
