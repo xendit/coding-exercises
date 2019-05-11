@@ -20,5 +20,6 @@ The goal of this repository is to hold a set of exercises for those who want to 
     5. Code Coverage Tool
     6. Type System
     7. Logging
+    8. CI/CD
 2. Refactoring
     1. Refactoring Functional Logic
