@@ -14,7 +14,7 @@ Some kinds of external dependencies may include:
 1. Version Control
 2. Programming Language/Platform
 3. Linter
-4. Test Runner
+4. Test Harness
 5. Code Coverage Tool
 
 ## Setup
@@ -22,7 +22,7 @@ Some kinds of external dependencies may include:
 1. Ensure that `node >= 8.6` is installed
 2. Run `npm install`
 3. Run `npm test`, all tests should be passing
-4. Run `npm report` to see the coverage reports
+4. Run `npm run report` to see the coverage reports
 
 ## Exercise
 
@@ -44,3 +44,6 @@ In order to achieve these goals, we need to go through a few steps:
 4. Refactor functional logic
 5. Improve readability and naming for control flow and functional logic
 
+#### Achieving Line Coverage
+
+Our first task is to write enough tests so we can reach 100% line coverage. Try to write the fewest number of tests to achieve this.

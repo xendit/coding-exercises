@@ -16,8 +16,9 @@ The goal of this repository is to hold a set of exercises for those who want to 
     1. Version Control
     2. Programming Language/Platform
     3. Linter
-    4. Test Runner
+    4. Test Harness
     5. Code Coverage Tool
     6. Type System
+    7. Logging
 2. Refactoring
     1. Refactoring Functional Logic
