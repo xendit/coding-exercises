@@ -1,0 +1,1 @@
+[test] add tests to achieve full line coverage of combine files control flow
