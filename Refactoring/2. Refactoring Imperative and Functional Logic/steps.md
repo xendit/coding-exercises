@@ -96,6 +96,8 @@ There are a few more tasks that need to be done at this point which will be left
 1. Cleaning up function naming
 2. Cleaning up variable naming
 3. Cleaning up the build combined file logic
+4. Moving validation logic into separate function
+5. Removing unnecessary tests at `combineFiles` level
 
 ### Conclusion
 
