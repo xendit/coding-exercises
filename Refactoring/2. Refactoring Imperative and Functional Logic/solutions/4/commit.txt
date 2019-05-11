@@ -1,0 +1,1 @@
+[refactor] isolate write output file

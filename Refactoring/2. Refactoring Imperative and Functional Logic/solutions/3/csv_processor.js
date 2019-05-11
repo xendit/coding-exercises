@@ -23,7 +23,7 @@ class CSVProcessor {
             }
         }
 
-        CSVProcessor.readFiles(pathsToFiles, function (err, files) {
+        CSVProcessor.readFiles(fs, pathsToFiles, function (err, files) {
             if (err) {
                 return callback(err);
             }
@@ -40,7 +40,7 @@ class CSVProcessor {
         });
     }
 
-    static readFiles (pathsToFiles, next) {
+    static readFiles (fs, pathsToFiles, next) {
         let index = 0;
         let files = [];
 
