@@ -1,6 +1,6 @@
 # Refactoring Functional Logic
 
-Refactoring functional logic is one of the most straightforward refactors that can be performed because of the lack of *external dependencies*.
+Refactoring functional logic is one of the most straightforward refactors that can be performed because of the lack of **external dependencies**.
 
 ## Needed Tools
 

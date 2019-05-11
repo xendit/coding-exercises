@@ -9,6 +9,7 @@
     "test:lint": "eslint .",
     "test:unit": "nyc mocha tests",
     "test": "npm run test:lint && npm run test:unit",
+    "report": "nyc report --reporter=html && open coverage/index.html",
     "start": "node index.js"
   },
   "keywords": [
