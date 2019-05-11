@@ -96,3 +96,13 @@ There are a few more tasks that need to be done at this point which will be left
 1. Cleaning up function naming
 2. Cleaning up variable naming
 3. Cleaning up the build combined file logic
+
+### Conclusion
+
+Congratulations! You've finished the second refactoring exercise. This exercise was significantly more difficult as it had both imperative control flow as well as tricky functional logic.
+
+#### Main Takeaways
+
+1. No matter how difficult the code may initially look, as long as you believe that there are no bugs, you can begin the refactoring process by aiming for 100% line coverage.
+2. Isolating functional logic will help you greatly later on in terms of being able to properly isolate the control flow and transform it into `async/await`
+3. After control flow has been cleaned up, you can go into the individual units and clean up naming and logic
