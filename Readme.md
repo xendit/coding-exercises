@@ -15,13 +15,24 @@ The goal of this repository is to hold a set of exercises for those who want to 
 1. Tooling
     1. Version Control
     2. Programming Language/Platform
-    3. Linter
-    4. Test Harness
-    5. Code Coverage Tool
-    6. Type System
-    7. Logging
-    8. CI/CD
-2. Refactoring
+    3. Databases
+    4. Message Queues
+    5. Crons
+    6. Linter
+    7. Test Harness
+    8. Code Coverage Tool
+    9. Type System
+    10. Logging
+    11. CI/CD
+2. Testing
+    1. Testing Functional Logic
+    2. Testing Imperative Logic
+    3. Testing with Database Connections
+    4. Testing Web Servers
+    5. Testing Microservices
+    6. Testing Crons
+    7. Testing Message Queues
+3. Refactoring
     1. Refactoring Functional Logic
     2. Refactoring Imperative and Functional Logic
     3. Refactoring Async Auto
