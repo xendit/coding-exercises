@@ -29,10 +29,9 @@ class CSVProcessor {
             }
         }
 
-        const promisifiedReadFiles = util.promisify(CSVProcessor.readFiles);
         const promisifiedWriteOutput = util.promisify(CSVProcessor.writeOutput);
 
-        const files = await promisifiedReadFiles(fs, pathsToFiles);
+        const files = await CSVProcessor.readFiles(fs, pathsToFiles);
         const result = CSVProcessor.buildCombinedFile(headers, files);
         const output = await promisifiedWriteOutput(fs, pathToOutput, result);
 

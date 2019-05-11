@@ -40,13 +40,59 @@ Our goals in the following exercise are:
 In order to achieve these goals, we need to go through a few steps:
 
 1. Reach 100% line coverage
-2. Split functional logic from control flow
-3. Reach 100% coverage on lines and branches in functional logic
+2. Isolate functional logic from control flow
+3. Refactor control flow
 4. Refactor functional logic
-5. Improve readability and naming for control flow and functional logic
+5. Remove control flow
+6. Clean up readability including function and variable naming
 
 #### Achieving Line Coverage
+
+Solutions: `1`
 
 Our first task is to write enough tests so we can reach 100% line coverage. Try to write the fewest number of tests to achieve this.
 
 Reference the fixtures in the tests folder to use in your tests when relevant.
+
+#### Isolate Functional Logic from Control Flow
+
+Solutions: `2-5`
+
+This step is critical in our success in refactoring code that has imperative and functional logic mixed together like this.
+
+The approach that is advised is to:
+
+1. Isolate reading files
+2. Isolate building combined file
+3. Isolate writing output file
+4. Isolate control flow
+
+#### Refactor Control Flow
+
+Solutions: `6`
+
+This step is the process of changing the control flow to use `async/await`.
+
+#### Refactor Functional Logic
+
+Solutions: `7-9`
+
+In these tasks, we need to refactor the functional logic to use `async/await`
+
+1. Refactor read files to be async
+2. Refactor write files to be async
+3. Convert `combineFiles` to be async
+
+#### Remove Control Flow
+
+Solutions: `10`
+
+We don't need a custom control flow function from here so we can simply remove it.
+
+#### Clean up readability
+
+There are a few more tasks that need to be done at this point which will be left as an exercise for the reader. Among many refactors, the reader can consider:
+
+1. Cleaning up function naming
+2. Cleaning up variable naming
+3. Cleaning up the build combined file logic
