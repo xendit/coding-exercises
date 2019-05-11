@@ -75,7 +75,7 @@ describe('csv processor tests', () => {
 
     it('should write file when some input file is empty', (done) => {
         const pathsToFiles = [`${__dirname}/fixtures/1.csv`, `${__dirname}/fixtures/empty.csv`];
-        const pathToOutput = `${__dirname}/output/1+2.csv`;
+        const pathToOutput = `${__dirname}/output/1+empty.csv`;
         const headers = ['foo', 'bar'];
 
         CSVProcessor.combineFiles(pathsToFiles, pathToOutput, headers, done);
