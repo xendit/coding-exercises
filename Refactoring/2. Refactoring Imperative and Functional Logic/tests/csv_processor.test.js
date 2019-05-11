@@ -16,7 +16,7 @@ describe('csv processor tests', () => {
             done();
         });
     });
-    
+
     it('should write file', (done) => {
         const pathsToFiles = [`${__dirname}/fixtures/1.csv`, `${__dirname}/fixtures/2.csv`];
         const pathToOutput = `${__dirname}/output/1+2.csv`;
