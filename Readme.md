@@ -1,29 +1,6 @@
-# Refactoring Exercise
+# Coding Exercises
 
 The goal of this repository is to hold a set of exercises for those who want to improve their coding practice. Each exercise will be fully self contained and contain a set of instructions to guide the reader through the proper set of steps required to perform the exercise properly.
-
-## Tooling
-
-Tooling is very important for us to achieve the second goal. Below is the set of necessary tools we need to understand and be able to use
-
-1. Version Control
-2. Programming Language/Platform
-3. Linter
-4. Test Runner
-5. Code Coverage Tool
-6. Type System
-
-### Version Control
-
-### Programming Language/Platform
-
-### Linter
-
-### Test Runner
-
-### Code Coverage Tool
-
-### Type System
 
 ## Steps to Start
 
@@ -34,5 +11,12 @@ Tooling is very important for us to achieve the second goal. Below is the set of
 
 ## Directory
 
-1. Refactoring
+1. Tooling
+    1. Version Control
+    2. Programming Language/Platform
+    3. Linter
+    4. Test Runner
+    5. Code Coverage Tool
+    6. Type System
+2. Refactoring
     1. Refactoring Functional Logic
