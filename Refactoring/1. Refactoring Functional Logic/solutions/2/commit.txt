@@ -1,0 +1,1 @@
+[refactor] change for loop to use array higher order map function

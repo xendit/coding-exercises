@@ -1,0 +1,1 @@
+[refactor] improve naming of functions and variables
