@@ -45,3 +45,5 @@ The goal of this repository is to hold a set of exercises for those who want to 
     2. Refactoring Imperative and Functional Logic
     3. Refactoring Async Auto
     4. Refactoring Data Access Code
+4. Bug Fixing
+    1. Bug Fixing Functional Logic
