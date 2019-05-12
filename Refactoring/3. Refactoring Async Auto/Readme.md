@@ -71,7 +71,7 @@ In this exercise, we are going to focus on refactoring a difficult `async.auto` 
 2. Run `npm install`
 3. Run `npm test`, all tests should be passing
 4. Run `npm run report` to see the coverage reports
-5. Run `npm test:watch` to have tests automatically rerun when changes are made
+5. Run `npm run test:watch` to have tests automatically rerun when changes are made
 
 ## Exercise
 

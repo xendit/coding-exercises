@@ -16,7 +16,7 @@ Refactoring functional logic is one of the most straightforward refactors that c
 2. Run `npm install`
 3. Run `npm test`, you should expect to see all tests passing and some code coverage
 4. Run `npm run report` to see the coverage reports
-5. Run `npm test:watch` to have tests automatically rerun when changes are made
+5. Run `npm run test:watch` to have tests automatically rerun when changes are made
 
 ## Exercise
 
