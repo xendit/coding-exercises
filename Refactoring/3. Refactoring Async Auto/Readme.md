@@ -83,3 +83,15 @@ Our goals in the following exercise are:
 2. Split control flow and functional logic and test them separately
 3. Improve readability and maintainability of control flow and functional logic
 4. Ensure that each change we make is 100% safe and will not change the behavior of the code
+
+### Steps
+
+In order to achieve these goals, we will follow a similar set of steps that we have used before. Given we've gone through the individual steps in earlier exercises, we'll move faster for this exercise:
+
+1. Reach 100% line coverage of `src/generate_report.js` by adding tests to `tests/generate_report.test.js`.
+2. Isolate each step of `async.auto` control flow into pure functional logic and make sure to inject any dependencies. Test these isolated steps to 100% branch and line coverage.
+3. Isolate `async.auto` control flow into pure functional logic (including validation logic) and inject any external functions and test to 100% line and branch coverage
+4. Replace isolated `async.auto` control flow with `async/await` and promisify any injected functions
+5. Refactor isolated steps of original `async.auto` control flow from `step 2` into `async/await`
+6. Pull out pure functional logic from isolated steps and test independently
+7. Clean up function and variable naming and logic structure
