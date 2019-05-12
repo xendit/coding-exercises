@@ -7,15 +7,12 @@ Adopting a test harness and understanding how to use it properly will be **absol
 1. Version Control
 2. Programming Language/Platform
 3. Linter
-4. Test Harness
-5. Code Coverage Tool
 
 ## Setup
 
 1. Ensure that `node >= 8.6` is installed
 2. Run `npm install`
 3. Run `npm test`, you should expect to see all tests passing and some code coverage
-4. Run `npm run report` to see the coverage reports
 
 ## Goals
 
