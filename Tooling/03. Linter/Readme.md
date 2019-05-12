@@ -23,3 +23,9 @@ We will follow these set of steps to set up our linter properly:
 1. Go to the `eslint` docs found [here](https://www.npmjs.com/package/eslint).
 2. Install eslint according to the instructions, ensure you're using `--save-dev` in order to ensure that the dependency is installed locally.
 3. Run `./node_modules/.bin/eslint --init` to set up the linter in this directory and follow the instructions and prompts.
+4. Add a lint command to `package.json` for easy access. We want to add a script with key `"test:lint"` and value `"./node_modules/.bin/eslint ."`
+5. Run `npm run test:lint` and fix all of the errors that the linter is reporting
+
+## Conclusion
+
+Congratulations! You've successfully set up a linter which will be a powerful tool for you to rely on later as you develop.
