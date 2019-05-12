@@ -10,11 +10,10 @@ The topics currently covered in this section are:
 
 ## Needed Tools
 
-1. Version Control
-2. Programming Language/Platform
-3. Linter
-4. Test Harness
-5. Code Coverage Tool
+1. Programming Language/Platform
+2. Linter
+3. Test Harness
+4. Code Coverage Tool
 
 ## Setup
 
