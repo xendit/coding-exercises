@@ -15,18 +15,19 @@ The goal of this repository is to hold a set of exercises for those who want to 
 1. Tooling
     1. Version Control
     2. Programming Language/Platform
-    3. Databases
-    4. Message Queues
-    5. Crons
-    6. Linter
-    7. Test Harness
-    8. Code Coverage Tool
-    9. Type System
-    10. Logging
-    11. Code Editor
-    12. Web Crawlers
-    13. CI/CD
-    14. Documentation
+    3. Linter
+    4. Code Editors
+    5. Test Harness
+    6. Web Servers
+    7. Databases
+    8. Message Queues
+    9. Crons
+    10. Code Coverage Tool
+    11. Type System
+    12. Logging
+    13. Web Crawlers
+    14. CI/CD
+    15. Documentation
 2. Testing
     1. Testing Functional Logic
     2. Testing Imperative Logic
