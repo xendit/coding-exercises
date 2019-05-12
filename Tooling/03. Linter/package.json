@@ -1,0 +1,18 @@
+{
+  "name": "tool-exercise-3",
+  "version": "1.0.0",
+  "description": "An exercise in tooling",
+  "directories": {
+  },
+  "scripts": {
+  },
+  "keywords": [
+    "Xendit"
+  ],
+  "author": "Bo",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
