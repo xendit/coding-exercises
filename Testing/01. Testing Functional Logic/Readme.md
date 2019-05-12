@@ -11,6 +11,7 @@ The topics currently covered in this section are:
 ## Needed Tools
 
 1. Programming Language/Platform
+2. Code Editor
 2. Linter
 3. Test Harness
 4. Code Coverage Tool
@@ -29,7 +30,7 @@ The topics currently covered in this section are:
 
 Our goals in the following exercise are:
 
-1. Learn how to reach 100% coverage on lines and branches
+1. Learn how to reach 100% coverage on lines and branches for pure functional logic
 2. Learn how to test functional logic with changing values like dates and random values
 3. Get hands on practice with a modern testing harness, tools, and techniques
 
