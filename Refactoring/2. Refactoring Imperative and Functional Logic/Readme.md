@@ -41,9 +41,9 @@ In order to achieve these goals, we need to go through a few steps:
 
 1. Reach 100% line coverage
 2. Isolate functional logic from control flow
-3. Refactor control flow
+3. Isolate control flow into functional logic
 4. Refactor functional logic
-5. Remove control flow
+5. Remove control flow wrapper
 6. Clean up readability including function and variable naming
 
 #### Achieving Line Coverage
@@ -67,7 +67,7 @@ The approach that is advised is to:
 3. Isolate writing output file
 4. Isolate control flow
 
-#### Refactor Control Flow
+#### Isolate Control Flow Into Functional Logic
 
 Solutions: `6`
 
@@ -83,11 +83,11 @@ In these tasks, we need to refactor the functional logic to use `async/await`
 2. Refactor write files to be async
 3. Convert `combineFiles` to be async
 
-#### Remove Control Flow
+#### Remove Control Flow Wrapper
 
 Solutions: `10`
 
-We don't need a custom control flow function from here so we can simply remove it.
+We don't need a custom control flow wrapper from here so we can simply remove it.
 
 #### Clean up readability
 
