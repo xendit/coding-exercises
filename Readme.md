@@ -33,6 +33,10 @@ The goal of this repository is to hold a set of exercises for those who want to 
     5. Testing Microservices
     6. Testing Crons
     7. Testing Message Queues
+    8. Testing React
+    9. Testing UI
+    10. Testing Security
+    11. Testing Load
 3. Refactoring
     1. Refactoring Functional Logic
     2. Refactoring Imperative and Functional Logic
