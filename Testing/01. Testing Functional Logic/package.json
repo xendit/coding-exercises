@@ -1,7 +1,7 @@
 {
-  "name": "tooling-exercise-1",
+  "name": "testing-exercise-1",
   "version": "1.0.0",
-  "description": "An exercise in tooling",
+  "description": "An exercise in testing",
   "directories": {
     "test": "tests"
   },
