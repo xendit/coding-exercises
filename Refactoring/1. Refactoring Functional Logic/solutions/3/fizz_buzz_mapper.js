@@ -1,6 +1,6 @@
 'use strict';
 
-async function fizzBuzzMapper (s, e, callback) {
+async function fizzBuzzMapper (s, e) {
     if (typeof s !== 'number' || typeof e !== 'number') {
         throw new Error('start and end indexes must both be numbers');
     }
