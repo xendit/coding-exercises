@@ -23,7 +23,8 @@ The goal of this repository is to hold a set of exercises for those who want to 
     8. Code Coverage Tool
     9. Type System
     10. Logging
-    11. CI/CD
+    11. Web Crawlers
+    12. CI/CD
 2. Testing
     1. Testing Functional Logic
     2. Testing Imperative Logic
