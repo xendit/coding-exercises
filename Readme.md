@@ -18,11 +18,11 @@ The goal of this repository is to hold a set of exercises for those who want to 
     3. Linter
     4. Code Editors
     5. Test Harness
-    6. Web Servers
+    6. Code Coverage Tools
     7. Databases
-    8. Message Queues
-    9. Crons
-    10. Code Coverage Tool
+    8. Web Servers
+    9. Message Queues
+    10. Crons
     11. Type System
     12. Logging
     13. Web Crawlers
