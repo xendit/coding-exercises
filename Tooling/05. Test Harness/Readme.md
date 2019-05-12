@@ -37,3 +37,23 @@ Our steps will be the following:
 3. Learn about how to include external code and expect results from that code
 4. Set up more advanced test harness features like watching files and automatically rerunning tests when files are changed
 5. Deep dive into good testing practice
+
+#### Setting Up Our Testing Harness
+
+We're going to use `mocha` in this example but other harnesses like `jest` work similarly. If you prefer to use something else instead, please feel free to do so. The exact tooling is not as important as understanding the general process and purpose of the tooling.
+
+In order to complete this step, please accomplish the following:
+
+1. install `mocha` locally using `npm install mocha --save-dev`
+2. Run mocha locally on the existing tests with `./node_modules/.bin/mocha tests`
+3. Add the tests folder to the directories in `package.json` and add a script with key `"test"` with the value `"npm run test:lint && ./node_modules/.bin/mocha tests"`.
+4. Run the tests using `npm test`
+
+#### Setting Up a Simple Test
+
+We're going to set up some basic tests without using any external dependencies at first in order to develop a basic understanding of the structure of test files and the use of expectations. We're using `chai` for expectations but other libraries will work as well.
+
+Please perform the below in order:
+
+1. Add tests to `tests/math.test.js` for the cases of subtraction, multiplication, division, and modulo (`%`).
+2. Run your tests in between each new case with `npm test` to ensure all of your tests are passing
