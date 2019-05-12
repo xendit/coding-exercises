@@ -3,7 +3,7 @@
 Data access code is hard to work with because it has a lot of complexities it is managing. There are many responsibilities for you to be aware of when working with this kind of code:
 
 1. Connection and session management with databases (they typically are not in the same memory as the application process)
-2. Implicit logic captured in the model schema, including validation
+2. Implicit logic captured in the model schema, including validation and indexes
 3. Logic to transform incoming before it's sent to the database or transform retrieved data from the database before it's delivered to the caller
 4. Dealing with changing state in the database over time
 
