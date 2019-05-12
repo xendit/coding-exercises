@@ -93,5 +93,6 @@ In order to achieve these goals, we will follow a similar set of steps that we h
 3. Isolate `async.auto` control flow into pure functional logic (including validation logic) and inject any external functions and test to 100% line and branch coverage
 4. Replace isolated `async.auto` control flow with `async/await` and promisify any injected functions
 5. Refactor isolated steps of original `async.auto` control flow from `step 2` into `async/await`
-6. Pull out pure functional logic from isolated steps and test independently
-7. Clean up function and variable naming and logic structure
+6. Pull out pure functional logic from isolated steps and test independently and replace multiple occurences when appropriate.
+7. Balance scope of functions and keep naming reflective of function scope
+8. Clean up function and variable naming and logic structure
