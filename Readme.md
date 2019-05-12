@@ -47,3 +47,6 @@ The goal of this repository is to hold a set of exercises for those who want to 
     4. Refactoring Data Access Code
 4. Bug Fixing
     1. Bug Fixing Functional Logic
+5. Application Case Studies
+    1. Basic Session Management
+    2. Permissions and RBAC
