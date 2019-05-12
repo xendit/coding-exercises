@@ -50,3 +50,4 @@ The goal of this repository is to hold a set of exercises for those who want to 
 5. Application Case Studies
     1. Basic Session Management
     2. Permissions and RBAC
+    3. Secrets Management
