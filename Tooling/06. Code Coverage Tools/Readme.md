@@ -43,7 +43,7 @@ Our steps will be the following:
 4. Run `npm run test:unit` and look for the coverage report being printed in your shell. You should see that we already have 100% coverage.
 5. Add a way for us to display HTML reports of our coverage for deeper analysis by adding a new script with key `"report"` and value
 	
-	`"./node_modules/.bin/nyc report --reporter=html && ./node_modules/.bin/opn coverage/index.html"`
+	`"./node_modules/.bin/nyc report --reporter=html && ./node_modules/.bin/open-cli coverage/index.html"`
 6. Open the HTML report with `npm run report`
 7. Each time we run our tests, we can simply refresh the HTML page and get an updated view of our coverage
 
@@ -149,6 +149,43 @@ it('should return a2', () => {
 Your function coverage will still be only `33%` because you haven't covered the functions `b` or `c`.
 
 Function coverage is important because it tells us which functions are actually called in our code. If a function really isn't being called, it may be a sign that we're missing tests or it may be a sign of dead code that is not or cannot be called and therefore can be considered for removal. The author of the code can make the correct decision after analyzing the reason behind the missing coverage.
+
+#### Line Coverage
+
+Line coverage is measurement of the percentage of lines that are executed in your tests. Lines are a little more tricky to count than functions which is why it's important to use a code coverage tool.
+
+Example Code:
+
+```
+function a(x) {
+    const data = {
+        hello: 'world'
+    };
+
+    if (x % 2 === 0) {
+        return data;
+    } else {
+        return 1;
+    }
+}
+```
+
+The function above only has 4 lines according to the coverage tool:
+
+1. `const data = { hello: 'world' };`
+2. `if (x % 2 === 0) { ... } else { ... }`
+3. `return data`
+4. `return 1`
+
+Example Test:
+
+```
+it('should return 1', () => {
+    a(1);
+});
+```
+
+Your total line coverage will be `75%` because you missed `#3` which is `return data;`
 
 ### Enforcing Minimum Coverage
 
