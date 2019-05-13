@@ -59,7 +59,7 @@ By default, `nyc` will only cover the required files in your tests. If you want 
 	
 	```
 	{
-		"all": true
+	    "all": true
 	}
 	```
 	
@@ -69,17 +69,17 @@ By default, `nyc` will only cover the required files in your tests. If you want 
 
 	```
 	{
-		"all": true,
-		"exclude": ["**/bower_components/**/*.js"]
+	    "all": true,
+	    "exclude": ["**/bower_components/**/*.js"]
 	}
 	```
 6. We can see in our coverage that we're including test files. If we want to strictly define what to include like below:
 
 	```
 	{
-		"all": true,
-		"include": ["src/**/*.js"],
-		"exclude": ["**/bower_components/**/*.js"]
+	    "all": true,
+	    "include": ["src/**/*.js"],
+	    "exclude": ["**/bower_components/**/*.js"]
 	}
 	```
 
@@ -108,19 +108,19 @@ Example Code:
 
 ```
 function a(x) {
-	if (x % 2 === 0) {
-		return 'a';
-	} else {
-		return 'a2';
-	}
+    if (x % 2 === 0) {
+        return 'a';
+    } else {
+        return 'a2';
+    }
 }
 
 function b() {
-	return 'b';
+    return 'b';
 }
 
 function c() {
-	return 'c';
+    return 'c';
 }
 ```
 
@@ -128,7 +128,7 @@ Example Test:
 
 ```
 it('should a', () => {
-	a(2);
+    a(2);
 });
 ```
 
@@ -138,11 +138,11 @@ Second Example Test:
 
 ```
 it('should return a', () => {
-	a(2);
+    a(2);
 });
 
 it('should return a2', () => {
-	a(1);
+    a(1);
 });
 ```
 
