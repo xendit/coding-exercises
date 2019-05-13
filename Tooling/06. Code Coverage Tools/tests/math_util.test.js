@@ -1,7 +1,7 @@
 'use strict';
 
 const { expect } = require('chai');
-const MathUtil = require('../src/')
+const MathUtil = require('../src/math_util');
 
 describe('math util tests', () => {
     it('should add', () => {
