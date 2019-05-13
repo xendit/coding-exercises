@@ -252,3 +252,7 @@ The above will ensure that we meet at least `80%` coverage on all the different 
 In the following exercise, please write tests to get `src/date_util.js` to 100% coverage across all 4 types.
 
 Put your test file in `tests/date_util.test.js`
+
+## Conclusion
+
+Congratulations! You've finished setting up code coverage tooling and learned how to improve it through writing tests.
