@@ -28,6 +28,7 @@ The goal of this repository is to hold a set of exercises for those who want to 
     13. Web Crawlers
     14. CI/CD
     15. Documentation
+    16. Cookies
 2. Testing
     1. Testing Functional Logic
     2. Testing Imperative Logic
