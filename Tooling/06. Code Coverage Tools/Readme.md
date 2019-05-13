@@ -41,11 +41,14 @@ Our steps will be the following:
 	
 	`"./node_modules/.bin/nyc ./node_module/.bin/mocha tests"`
 4. Run `npm run test:unit` and look for the coverage report being printed in your shell. You should see that we already have 100% coverage.
-5. Add a way for us to display HTML reports of our coverage for deeper analysis by adding a new script with key `"report"` and value
+5. Add report generation after each test. Update `npm test` to the following:
+
+    `"npm run test:lint && npm run test:unit && ./node_modules/.bin/nyc report --reporter=html"`
+6. Add a way for us to display HTML reports of our coverage for deeper analysis by adding a new script with key `"report"` and value
 	
 	`"./node_modules/.bin/nyc report --reporter=html && ./node_modules/.bin/open-cli coverage/index.html"`
-6. Open the HTML report with `npm run report`
-7. Each time we run our tests, we can simply refresh the HTML page and get an updated view of our coverage
+7. Open the HTML report with `npm run report`
+8. Each time we run our tests, we can simply refresh the HTML page and get an updated view of our coverage
 
 ### Configuration
 
@@ -97,8 +100,7 @@ Our code coverage tools tells us about 4 different kinds of coverage:
 For each, we will discuss:
 
 1. The precise definition
-2. Its significance
-3. How to improve it
+2. How to improve it
 
 #### Function Converage
 
@@ -146,7 +148,7 @@ it('should return a2', () => {
 });
 ```
 
-Your function coverage will still be only `33%` because you haven't covered the functions `b` or `c`.
+Your function coverage will still be only `33%` because you haven't covered the functions `b` or `c`. In order to improve your function coverage to `100%`, you will need to write another 2 tests to cover the missing functions.
 
 Function coverage is important because it tells us which functions are actually called in our code. If a function really isn't being called, it may be a sign that we're missing tests or it may be a sign of dead code that is not or cannot be called and therefore can be considered for removal. The author of the code can make the correct decision after analyzing the reason behind the missing coverage.
 
@@ -185,7 +187,46 @@ it('should return 1', () => {
 });
 ```
 
-Your total line coverage will be `75%` because you missed `#3` which is `return data;`
+Your total line coverage will be `75%` because you missed `#3` which is `return data;`. In order to raise your coverage to `100%`, you will need to write another test where `x` is even.
+
+Line coverage is important because it tells you which lines of code are executed. Similarly to functions, we can gain an understanding if we're missing tests or if we have dead code when we find lines that are not covered.
+
+#### Branch Coverage
+
+Branch coverage is the measure of the percentage of logical branches which are covered. Consider the code below:
+
+```
+function a(x) {
+    if (x % 2 === 1) {
+        return 'one odd';
+    }
+
+    return 'at least one even';
+}
+```
+
+In this simple, example, we see that there are 2 branches our logic can take. Either `x` is odd or it's even. A little more complicated example can look like:
+
+```
+function a(x, y) {
+    if (x % 2 === 1 || y % 2 === 1) {
+        return 'one odd';
+    }
+
+    return 'both even';
+}
+```
+
+It looks like we still have 2 branches but this code will actually create 4 branches.
+
+There are 4 cases with this logic:
+
+1. x is odd AND y is odd
+2. x is odd AND y is even
+3. x is even AND y is odd
+4. x is even AND y is even
+
+Branch coverage is important because it represents that we have enough test cases to sufficiently exercise all of the logical branches that can happen from our logic. If we reach 100% branch coverage, then we can safely refactor the internal logic using our test suite (assuming it's a pure function without side effects). This is *NOT* true of line or function coverage.
 
 ### Enforcing Minimum Coverage
 

@@ -1,14 +1,14 @@
 'use strict';
 
 class DateUtil {
-    static getTomorrow() {
+    static getTomorrow () {
         const now = new Date(); const num = 1;
         now.setDate(now.getDate() + num);
 
         return now;
     }
 
-    static formatDate(now) {
+    static formatDate (now) {
         const isDateEven = now.getDate() % 2 === 0;
         const isMonthEven = now.getMonth() % 2 === 0;
 
