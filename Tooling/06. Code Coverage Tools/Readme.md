@@ -149,3 +149,22 @@ it('should return a2', () => {
 Your function coverage will still be only `33%` because you haven't covered the functions `b` or `c`.
 
 Function coverage is important because it tells us which functions are actually called in our code. If a function really isn't being called, it may be a sign that we're missing tests or it may be a sign of dead code that is not or cannot be called and therefore can be considered for removal. The author of the code can make the correct decision after analyzing the reason behind the missing coverage.
+
+### Enforcing Minimum Coverage
+
+We may want to enforce minimum coverage in order to ensure that when that coverage level is not met, our tests and builds will fail. If we do this, we will guarantee that we will not ship code that doesn't meet our minimum level of expectations.
+
+This is helpful to maintain a baseline of quality in the codebase but it won't prevent bugs by itself. We need to ensure that along with coverage, we are **writing good tests** that match the expectations of our customers.
+
+In our `.nycrc.json` config file, we can specify the minimum percentage of each different type of coverage we'd like. For example:
+
+```
+{
+    "branches": 80,
+    "lines": 80,
+    "functions": 80,
+    "statements": 80
+}
+```
+
+The above will ensure that we meet at least `80%` coverage on all the different kinds.
