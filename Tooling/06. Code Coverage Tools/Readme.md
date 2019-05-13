@@ -84,3 +84,68 @@ By default, `nyc` will only cover the required files in your tests. If you want 
 	```
 
 	You should only see the files `src/math_util.js` and `src/date_util.js` being covered.
+
+### Explaining Coverage Terms
+
+Our code coverage tools tells us about 4 different kinds of coverage:
+
+1. Function Coverage
+2. Line Coverage
+3. Branch Coverage
+4. Statement Coverage
+
+For each, we will discuss:
+
+1. The precise definition
+2. Its significance
+3. How to improve it
+
+#### Function Converage
+
+Function coverage is the measurement of the percentage of defined functions which are actually called in your tests.
+
+Example Code:
+
+```
+function a(x) {
+	if (x % 2 === 0) {
+		return 'a';
+	} else {
+		return 'a2';
+	}
+}
+
+function b() {
+	return 'b';
+}
+
+function c() {
+	return 'c';
+}
+```
+
+Example Test:
+
+```
+it('should a', () => {
+	a(2);
+});
+```
+
+Your function coverage when having this test case will be `33%` because you've covered `1/3` functions in your test.
+
+Second Example Test:
+
+```
+it('should return a', () => {
+	a(2);
+});
+
+it('should return a2', () => {
+	a(1);
+});
+```
+
+Your function coverage will still be only `33%` because you haven't covered the functions `b` or `c`.
+
+Function coverage is important because it tells us which functions are actually called in our code. If a function really isn't being called, it may be a sign that we're missing tests or it may be a sign of dead code that is not or cannot be called and therefore can be considered for removal. The author of the code can make the correct decision after analyzing the reason behind the missing coverage.
