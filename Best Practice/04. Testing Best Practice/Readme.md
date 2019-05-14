@@ -55,6 +55,10 @@ Our steps will be the following:
 
 	**Our tests should serve as an early warning against incorrect changes or behavior so it's absolutely important that they can inform us quickly.**
 
+8. Ensure that you properly test for logical edge cases. You should test your code from the perspective of someone who did not write the code. Remember that simply having `100%` code coverage does not mean you have no bugs in your code. Change the tests in `tests/logical_edge_cases.test.js` to add another case to expose the bug in the code.
+
+	**It's important to test more than a single case when you have a function that is responsible for logic. In these cases, having full coverage does not by itself guarantee that the logic is correct. Thinking from the perspective of someone who didn't write the code will allow you to find cases that fully exercise the code to ensure it's correct under all cases**
+
 ## Conclusion
 
 Congratulations! We've just finished identifying and adopting best practices when it comes to using our testing tools and when writing the test cases themselves.
