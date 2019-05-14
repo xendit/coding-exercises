@@ -19,7 +19,7 @@ app.get('/cats', (req, res) => {
 });
 
 app.get('/cats/:cat_id', (req, res) => {
-    let cat = cats.filter(cat => cat.id === req.params.cat_id)[0];
+    let cat = cats.filter(cat => cat.id === Number(req.params.cat_id))[0];
 
     if (cat === undefined) {
         return res.status(400).send({ error_code: 'CAT_NOT_FOUND' });
