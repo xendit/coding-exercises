@@ -28,7 +28,12 @@ The goal of this repository is to hold a set of exercises for those who want to 
     13. Web Crawlers
     14. CI/CD
     15. Documentation
-2. Testing
+2. Practice
+    1. Version Control Practice
+    2. Language Practice
+    3. Linter Practice
+    4. Test Practice
+3. Testing
     1. Testing Functional Logic
     2. Testing Imperative Logic
     3. Testing with Database Connections
@@ -40,16 +45,16 @@ The goal of this repository is to hold a set of exercises for those who want to 
     9. Testing UI
     10. Testing Security
     11. Testing Load
-3. Refactoring
+4. Refactoring
     1. Refactoring Functional Logic
     2. Refactoring Imperative and Functional Logic
     3. Refactoring Async Auto
     4. Refactoring Data Access Code
-4. Bug Fixing
+5. Bug Fixing
     1. Bug Fixing Functional Logic
-5. Security
+6. Security
     1. SQL Injection
-6. Application Case Studies
+7. Application Case Studies
     1. Basic Session Management
     2. Permissions and RBAC
     3. Secrets Management

@@ -74,24 +74,6 @@ Please perform the below in order:
 3. Run `npm test:watch` in order to start watching
 4. Change a test file or code file and watch the tests get rerun automatically!
 
-### Good Testing Practice
+## Conclusion
 
-We're going to discuss good testing practices both in terms of using the tooling as well as the practice of writing robust test cases for our code.
-
-#### Tooling Practices
-
-Below are the set of test harness practices you should adopt in order to be highly effective:
-
-1. Develop with watch mode on to limit the amount of manual work you need to do in order to run your tests.
-2. Run your tests before making a commit to ensure that the code passes all current tests.
-3. Run and understand current tests before making a change to get an understanding of what could go wrong when making changes.
-4. Start your exploration of code behavior with test cases to supplement your use of `console.log` and breakpoints. They are a good time investment because you can continue to rely on the cases you write. Breakpoints and `console.logs` are deleted after code is committed.
-
-#### [WIP] Test Case Practices
-
-Below are the set of practices when writing test cases to keep in mind so we can produce robust and effective test cases that will be the advanced notice we get before a wrong behavior is introduced into our code. They are:
-
-1. Write a failing test before making it successful
-2. Learn how to test normal functions, promise, and callback based code
-3. Learn how to expect errors
-4. Learn how to prevent bugs in test code
+Congratulations! You've finished setting up a test harness. This will allow you to quickly verify whether your code and changes are working properly in the future
