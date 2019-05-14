@@ -46,7 +46,7 @@ In order to achieve these goals, we will follow these steps:
 
         Verify that you're able to get all of the cats in the database.
 2. Make a change to `src/app.js` that prevents this unauthorized behavior using a SQL query sanitizer. The library we use `sqlite` already has a way to do this. Ensure the behavior is fixed by making a request
-3. Write a test for the endpoint `/cats/:cat_id` using `supertest` to ensure this behavior is fixed
+3. Write a test for the endpoint `/cats/:cat_id` using `supertest` to ensure this behavior is fixed in `tests/app.test.js`.
 
 ## Conclusion
 
