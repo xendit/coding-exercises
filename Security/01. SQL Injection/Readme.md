@@ -15,9 +15,8 @@ In this exercise, we will being to address injection attacks, one of the most co
 
 1. Ensure that `node >= 8.6` is installed
 2. Run `npm install`
-3. Run `npm test`, you should expect to see all tests passing and some code coverage
-4. Run `npm run report` to see the coverage reports
-5. Run `npm run test:watch` to have tests automatically rerun when changes are made
+3. Run `npm test` and see that linter is passing and there are no tests
+4. Run `npm start` and make a request to `http://localhost:1234` to ensure that the server is alive
 
 ## Exercise
 
@@ -46,7 +45,7 @@ In order to achieve these goals, we will follow these steps:
 
         Verify that you're able to get all of the cats in the database.
 2. Make a change to `src/app.js` that prevents this unauthorized behavior using a SQL query sanitizer. The library we use `sqlite` already has a way to do this. Ensure the behavior is fixed by making a request
-3. Write a test for the endpoint `/cats/:cat_id` using `supertest` to ensure this behavior is fixed in `tests/app.test.js`.
+3. Write a test for the endpoint `/cats/:cat_id` using `supertest` to ensure this behavior is fixed in `tests/app.test.js`. You should achieve 100% coverage of `src/app.js`.
 
 ## Conclusion
 
