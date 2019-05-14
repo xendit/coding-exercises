@@ -7,7 +7,7 @@
   },
   "scripts": {
     "test:lint": "./node_modules/.bin/eslint .",
-    "test:lint-fix": "eslint . --fix"
+    "test:lint-fix": "./node_modules/.bin/eslint . --fix"
   },
   "keywords": [
     "Xendit"

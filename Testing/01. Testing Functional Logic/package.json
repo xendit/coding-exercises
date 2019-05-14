@@ -7,7 +7,7 @@
   },
   "scripts": {
     "test:lint": "./node_modules/.bin/eslint .",
-    "test:lint-fix": "eslint . --fix",
+    "test:lint-fix": "./node_modules/.bin/eslint . --fix",
     "test:unit": "./node_modules/.bin/nyc ./node_modules/.bin/mocha tests",
     "test": "npm run test:lint && npm run test:unit && ./node_modules/.bin/nyc report --reporter=html",
     "test:watch": "./node_modules/.bin/nodemon -x 'npm test'",
