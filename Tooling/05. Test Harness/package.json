@@ -6,7 +6,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test:lint": "eslint .",
+    "test:lint": "./node_modules/.bin/eslint .",
     "test:lint-fix": "eslint . --fix"
   },
   "keywords": [
