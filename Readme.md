@@ -28,11 +28,11 @@ The goal of this repository is to hold a set of exercises for those who want to 
     13. Web Crawlers
     14. CI/CD
     15. Documentation
-2. Practice
+2. Best Practice
     1. Version Control Practice
-    2. Language Practice
-    3. Linter Practice
-    4. Test Practice
+    2. Language Best Practice
+    3. Linter Best Practice
+    4. Testing Best Practice
 3. Testing
     1. Testing Functional Logic
     2. Testing Imperative Logic
