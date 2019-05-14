@@ -2,7 +2,7 @@
 
 class DateLogic {
     static v1 (now, days) {
-        if (typeof now !== 'date') {
+        if (!(now instanceof Date)) {
             throw new Error('now must be a date');
         }
 
