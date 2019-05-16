@@ -83,7 +83,7 @@ We are going to work with 3 tables in this example: `Owners`, `OwnerCats`, and `
 
 1. Modify the code in `src/join_sql.js` to ensure that the tests in `tests/join_sql.test.js` all pass.
 2. Modify the code in `src/join_nosql.js` to ensure that the tests in `tests/join_nosql.test.js` all pass.
-3. **[WIP]** Modify the code in `src/join_redis.js` to ensure that the tests in `tests/join_redis.test.js` all pass.
+3. Modify the code in `src/join_redis.js` to ensure that the tests in `tests/join_redis.test.js` all pass.
 
 ##### [WIP] Transactions
 
