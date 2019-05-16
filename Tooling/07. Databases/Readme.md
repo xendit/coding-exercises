@@ -40,10 +40,24 @@ We are going to start with installing the databases locally so we can access the
 
     Follow this [documentation](https://redis.io/topics/quickstart)
 
+    Test your connection with `redis-cli` in your shell. It should open a connection to your local redis server.
+
+    Install the redis node client using `npm install redis --save`
+
 3. Ensure mongodb is installed and running locally:
 
     Follow this [documentation](https://docs.mongodb.com/manual/installation/) for the community edition
 
+    Test your connection by using a mongo client like [Robo 3T](https://robomongo.org/) to connect to your local mongo at `localhost:27017`.
+
+    Install the mongo node client using `npm install mongodb --save`
+
 #### Database Setup, Connection, and Execution
 
 1. Modify the code in `src/build_sqlite_connection.js` to ensure that the tests in `tests/build_sqlite_connection.test.js` all pass.
+
+    You'll notice for the second test, there will be a new file in the root directory named `database.sqlite`. This file will contain your data so if you open a connection to this file, the data you saved will be recorded here.
+
+2. Modify the code in `src/build_redis_connection.js` to ensure that the tests in `tests/build_redis_connection.test.js` all pass. Ensure you have redis running locally before you run the test.
+
+
