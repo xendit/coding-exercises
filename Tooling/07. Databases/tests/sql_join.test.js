@@ -136,7 +136,7 @@ describe('connecting to sqlite', () => {
                 catAge: 5,
                 ID: 1,
                 ownerID: 1,
-                ownerName: 'Rebecca',
+                ownerName: 'Rebecca'
             },
             {
                 catID: 1,
@@ -145,7 +145,7 @@ describe('connecting to sqlite', () => {
                 catAge: 5,
                 ID: 2,
                 ownerID: 2,
-                ownerName: 'Stella',
+                ownerName: 'Stella'
             },
             {
                 catID: 2,
@@ -154,7 +154,7 @@ describe('connecting to sqlite', () => {
                 catAge: 3,
                 ID: 3,
                 ownerID: 2,
-                ownerName: 'Stella',
+                ownerName: 'Stella'
             },
             {
                 catID: 3,
@@ -163,7 +163,7 @@ describe('connecting to sqlite', () => {
                 catAge: 2,
                 ID: 4,
                 ownerID: 1,
-                ownerName: 'Rebecca',
+                ownerName: 'Rebecca'
             },
             {
                 catID: 2,
@@ -172,7 +172,7 @@ describe('connecting to sqlite', () => {
                 catAge: 3,
                 ID: 5,
                 ownerID: 2,
-                ownerName: 'Stella',
+                ownerName: 'Stella'
             },
             {
                 catID: 3,
@@ -181,9 +181,9 @@ describe('connecting to sqlite', () => {
                 catAge: 2,
                 ID: 6,
                 ownerID: 3,
-                ownerName: 'CC',
+                ownerName: 'CC'
             }
-        ]
+        ];
 
         expect(joinedCatOwners).to.deep.equal(resultToExpect);
     });
