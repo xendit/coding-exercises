@@ -32,5 +32,9 @@ describe('build mongo connection', () => {
         ]);
 
         expect(result.result.n).to.equal(1);
+
+        const promisifiedDelete = util.promisify(catsCollection.deleteMany.bind(catsCollection));
+
+        await promisifiedDelete();
     });
 });
