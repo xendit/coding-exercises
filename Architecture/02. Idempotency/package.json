@@ -18,7 +18,9 @@
   ],
   "author": "Bo",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "sqlite": "^3.0.3"
+  },
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^5.16.0",
