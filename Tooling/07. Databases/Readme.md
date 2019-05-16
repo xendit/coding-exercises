@@ -66,7 +66,7 @@ We are going to start with installing the databases locally so we can access the
 
 Joins are a very common use case in which we must combine data from multiple collections/tables into a single result. Let's see how this works in practice between SQL and no-SQL.
 
-##### SQL Join
+##### Joining
 
 We are going to work with 3 tables in this example: `Owners`, `OwnerCats`, and `Cats`. For the purposes of this exercise, there is a many-to-many relationship between owners and cats.
 
