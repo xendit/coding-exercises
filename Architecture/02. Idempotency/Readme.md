@@ -34,8 +34,9 @@ Our goals in the following exercises are:
     1. Pure functions
     2. Databases
     3. Web servers
-    4. Message queues
-    5. Crons
+    4. [WIP] Message queues
+    5. [WIP] Crons
+2. Understand applied idempotency in a complex example with web servers and databases
 
 ## Steps
 
