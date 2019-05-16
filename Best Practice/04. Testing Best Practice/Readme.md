@@ -14,7 +14,7 @@ In the section below, we're going to discuss what practices you should adopt whe
 
 1. Ensure that `node >= 8.6` is installed
 2. Run `npm install`
-3. Run `npm test`, you should expect to see all tests passing and some code coverage
+3. Run `npm test`, you should expect to see the linter passing but some test failing and some code coverage
 4. Run `npm run report` to see the coverage reports
 5. Run `npm run test:watch` to have tests automatically rerun when changes are made
 
