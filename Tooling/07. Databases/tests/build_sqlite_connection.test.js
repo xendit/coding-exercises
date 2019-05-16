@@ -40,7 +40,7 @@ describe('connecting to sqlite', () => {
             }
         ];
 
-        expec(cats).to.deep.equal(resultToExpect);
+        expect(cats).to.deep.equal(resultToExpect);
     });
 
     it('should connect to sqlite on disk', async () => {
@@ -79,6 +79,6 @@ describe('connecting to sqlite', () => {
             }
         ];
 
-        expec(cats).to.deep.equal(resultToExpect);
+        expect(cats).to.deep.equal(resultToExpect);
     });
 });
