@@ -67,3 +67,16 @@ In writing the implementation, you may need some way of knowing what the state i
 2. Using an index
 
 In practice, using an index is safer because it is a database level guarantee there will not be any duplicate values with the set of keys you define in the index.
+
+### Web Servers
+
+Web servers also need idempotency for many reasons including:
+
+1. Caching
+2. Security
+3. Graceful retry
+
+Our steps will be:
+
+1. Implement `src/app.js` so that all tests in `tests/app.test.js` pass.
+2. Run `npm test` to ensure `test/app.test.js` pass and code coverage is at `100%`
