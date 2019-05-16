@@ -20,10 +20,10 @@ describe('testing idempotency at the function level', () => {
 
     describe('non idempotent', () => {
         it('should not be idempotent', () => {
-            const result = FN.nonidempotentFN(1, 2);
-            const secondResult = FN.nonidempotentFN(2, 2);
-            const thirdResult = FN.nonidempotentFN(1, 2);
-            const fourthResult = FN.nonidempotentFN(2, 2);
+            const result = FN.nonidempotentFn(1, 2);
+            const secondResult = FN.nonidempotentFn(2, 2);
+            const thirdResult = FN.nonidempotentFn(1, 2);
+            const fourthResult = FN.nonidempotentFn(2, 2);
 
             expect(result).to.equal(3);
             expect(secondResult).to.equal(4);
