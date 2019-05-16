@@ -83,3 +83,11 @@ We are going to work with 3 tables in this example: `Owners`, `OwnerCats`, and `
 
 1. Modify the code in `src/join_sql.js` to ensure that the tests in `tests/join_sql.test.js` all pass.
 2. Modify the code in `src/join_nosql.js` to ensure that the tests in `tests/join_nosql.test.js` all pass.
+
+##### [WIP] Transactions
+
+Transactions are important for us to maintain the consistency of the data in the database when there are multiple steps that need to be made at the same time.
+
+##### [WIP] Performance
+
+##### [WIP] Flexibility
