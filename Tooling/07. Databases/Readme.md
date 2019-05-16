@@ -60,4 +60,5 @@ We are going to start with installing the databases locally so we can access the
 
 2. Modify the code in `src/build_redis_connection.js` to ensure that the tests in `tests/build_redis_connection.test.js` all pass. Ensure you have redis running locally before you run the test.
 
+3. Modify the code in `src/build_mongo_connection.js` to ensure that the tests in `tests/build_mongo_connection.test.js` all pass. Ensure you have mongo running locally before you run the test.
 
