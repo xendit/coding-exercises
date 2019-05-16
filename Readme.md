@@ -59,6 +59,8 @@ The goal of this repository is to hold a set of exercises for those who want to 
     2. Idempotency
     3. Circuit Breakers
     4. Bulkheads
+    5. Timeouts and Rate Limits
+    6. In Band vs Out of Band
 8. Application Case Studies
     1. Basic Session Management
     2. Permissions and RBAC
