@@ -4,7 +4,7 @@ const { expect } = require('chai');
 const buildSQLiteConnection = require('../src/build_sqlite_connection');
 const getJoinedCatOwners = require('../src/sql_join');
 
-describe('connecting to sqlite', () => {
+describe('join sql', () => {
     let dbConnection;
 
     before(async () => {

@@ -6,7 +6,7 @@ const { expect } = require('chai');
 const buildMongoConnection = require('../src/build_mongo_connection');
 const getJoinedCatOwners = require('../src/nosql_join');
 
-describe('build mongo connection', () => {
+describe('join mongo', () => {
     let dbConnection, db;
 
     before(async () => {
