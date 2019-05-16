@@ -54,7 +54,9 @@ The goal of this repository is to hold a set of exercises for those who want to 
     1. Bug Fixing Functional Logic
 6. Security
     1. SQL Injection
-7. Application Case Studies
+7. Architecture
+    1. Data Architecture
+8. Application Case Studies
     1. Basic Session Management
     2. Permissions and RBAC
     3. Secrets Management
