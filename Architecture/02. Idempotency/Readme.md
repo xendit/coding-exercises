@@ -36,7 +36,7 @@ Our goals in the following exercises are:
     3. Web servers
     4. [WIP] Message queues
     5. [WIP] Crons
-2. Understand applied idempotency in a complex example with web servers and databases
+2. Understand applied idempotency in a complex example in which an endpoint performs multiple steps which include database operations.
 
 ## Steps
 
@@ -75,7 +75,7 @@ Web servers also need idempotency for many reasons including:
 
 1. Caching
 2. Security
-3. Graceful retry
+3. Graceful retry and recovery
 
 Our steps will be:
 
