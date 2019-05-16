@@ -62,3 +62,24 @@ We are going to start with installing the databases locally so we can access the
 
 3. Modify the code in `src/build_mongo_connection.js` to ensure that the tests in `tests/build_mongo_connection.test.js` all pass. Ensure you have mongo running locally before you run the test.
 
+#### Use Case: Joins
+
+Joins are a very common use case in which we must combine data from multiple collections/tables into a single result. Let's see how this works in practice between SQL and no-SQL.
+
+##### SQL Join
+
+We are going to work with 3 tables in this example: `Owners`, `OwnerCats`, and `Cats`. For the purposes of this exercise, there is a many-to-many relationship between owners and cats.
+
+```
+-------------------             --------------           --------------
+| Cats            |             | OwnerCats  |           | Owners     |
+-------------------             --------------           --------------
+| CatID Text PK   | +-------    | Id PK      |     |----+| OwnerId PK |
+| Name Text       |        |---<| CatId FK   |     |     | Name Text  |
+| Color Text      |             | OwnerId FK | >---|     --------------
+| Age Integer     |             --------------
+-------------------
+```
+
+1. Modify the code in `src/join_sql.js` to ensure that the tests in `tests/join_sql.test.js` all pass.
+2. Modify the code in `src/join_nosql.js` to ensure that the tests in `tests/join_nosql.test.js` all pass.
