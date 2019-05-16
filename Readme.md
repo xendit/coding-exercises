@@ -63,4 +63,3 @@ The goal of this repository is to hold a set of exercises for those who want to 
     2. Permissions and RBAC
     3. Secrets Management
     4. Ledgers
-    5. Idempotency
