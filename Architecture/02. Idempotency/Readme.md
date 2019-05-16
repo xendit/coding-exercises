@@ -45,7 +45,7 @@ Our goals in the following exercises are:
 Idempotency is easiest to understand in the context of functions. We will see an example of an idempotent function and a non idempotent function. This will give us a baseline understanding to try to understand idempotence in other contexts and levels.
 
 1. Implement `src/function.js` so that all tests in `tests/function.test.js` pass.
-2. Run `npm test` to ensure `test/function.test.js` pass and code coverage is at `100%` 
+2. Run `npm test` to ensure `tests/function.test.js` pass and code coverage is at `100%` for `src/function.js` and `tests/function.test.js`
 
 In writing the implementation, you will find that in order to implement the non idempotent version, you will need to rely on state outside of the context of the function. This is crucial. All functions that rely on external state have the potential to be non idempotent.
 
@@ -60,7 +60,7 @@ You will typically find that pure functions are easier to debug because it's har
 Databases are the next area we should understand idempotency. After functions, it is most important to understand it at this level because it will be the foundation of almost everything that comes afterwards because most of the state of applications is managed by some kind of database.
 
 1. Implement `src/database.js` so that all tests in `tests/database.test.js` pass.
-2. Run `npm test` to ensure `test/function.test.js` pass and code coverage is at `100%`
+2. Run `npm test` to ensure `tests/function.test.js` pass and code coverage is at `100%` for `src/database.js` and `tests/database.test.js`
 
 In writing the implementation, you may need some way of knowing what the state in the database is before writing a new cat. You can consider two methods in accomplishing this:
 
@@ -80,4 +80,51 @@ Web servers also need idempotency for many reasons including:
 Our steps will be:
 
 1. Implement `src/app.js` so that all tests in `tests/app.test.js` pass.
-2. Run `npm test` to ensure `test/app.test.js` pass and code coverage is at `100%`
+2. Run `npm test` to ensure `tests/app.test.js` pass and code coverage is at `100%` for `src/app.js` and `tests/app.test.js`
+
+### Advanced Example
+
+In our example below, we will consider an endpoint `POST /cats` that is responsible for creating cats but also owners. The information that is sent in will be in the format:
+
+```
+{
+    cat_name: String,
+    cat_color: String,
+    cat_age: Number,
+    owner_name: String,
+    owner_age: Number
+}
+```
+
+The steps this endpoint will take is:
+
+1. Create an owner if one does not already exist with the same name and age
+2. Create a cat with an `ownerID` equal to the owner from the previous step if there is no cat with the same name, color, age, and owner
+3. Return the cat and owner data in the format
+
+    ```
+    {
+        catID: Number,
+        ownerID: Number,
+        catName: String,
+        catColor: String,
+        catAge: Number,
+        ownerName: String,
+        ownerAge: Number
+    }
+    ```
+
+The main problem we will work on in this example is the problem of how to recovery safely after a crash in the process. If the process crashes after the user is created, we want a way to create the cat safely. Therefore, we should design our endpoint to be idempotent in creating owners and continue to creating the cat.
+
+Please follow these steps in completing the exercise:
+
+1. Implement `src/app_advanced.js` so that all tests in `tests/app_advanced.test.js` pass.
+2. Run `npm test` to ensure `tests/app_advanced.test.js` pass and code coverage is at `100%` for `src/app_advanced.js` and `tests/app_advanced.test.js`
+
+After understanding this example, we can see the power this gives us. As long as have idempotent processes, we can safely rerun any process, regardless of whether they are coming as a:
+
+1. HTTP request
+2. Message queue
+3. Cron
+
+Having idempotency gives us peace of mind that when something eventually goes wrong, we will be able to recover easily.
