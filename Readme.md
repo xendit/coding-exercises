@@ -57,6 +57,7 @@ The goal of this repository is to hold a set of exercises for those who want to 
 7. Architecture
     1. Data Architecture
     2. Idempotency
+    3. Microservices
 8. Application Case Studies
     1. Basic Session Management
     2. Permissions and RBAC
