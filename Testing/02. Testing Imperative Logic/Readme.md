@@ -10,13 +10,13 @@ The difficult aspect of maintaining this type of logic lies in the fact that we 
 2. Allow your test to hit a fake dependency (mock)
 3. Prevent your test from making a call and give it a fake result (stub)
 
-Each of these approaches has their own advantages and disadvantages:
+Each of these approaches has their own **advantages** and *disadvantages*:
 
 | Method           | Effort to Setup Environment | Effort to Write Tests | Flakiness | Detects Errors When Dependencies Change |
 | ---------------- | --------------------------- | --------------------- | --------- | --------------------------------------- |
-| Full Integration | **Easy-Medium**             | Medium-Hard           | High      | **High**                                |
-| Mocking          | Medium                      | **Easy-Medium**       | Medium    | **Medium**                              |
-| Stubbing         | Medium-Hard                 | **Easy-Medium**       | **Low**   | Low                                     |
+| Full Integration | **Easy-Medium**             | *Medium-Hard*           | *High*      | **High**                                |
+| Mocking          | *Medium*                      | **Easy-Medium**       | *Medium*    | **Medium**                              |
+| Stubbing         | *Medium-Hard*                 | **Easy-Medium**       | **Low**   | *Low*                                     |
 
 In our exercises below, we'll go over each of these methods so we can get a balanced sense of the advantages and drawbacks of each one.
 
