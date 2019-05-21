@@ -24,7 +24,7 @@ class RandomLogic {
     }
 
     static v3 (getRandom, multiplier) {
-        if (typeof random !== 'function') {
+        if (typeof getRandom !== 'function') {
             throw new Error('getRandom must be a function');
         }
 
