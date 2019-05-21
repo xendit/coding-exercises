@@ -6,7 +6,7 @@ Imperative logic is generally very useful for us or else we would only have acce
 
 The difficult aspect of maintaining this type of logic lies in the fact that we need to manage the external dependency in some way. Typically there are a few ways to accomplish end to end testing for imperative logic:
 
-1. Allow your test to hit the **REAL** dependency
+1. Allow your test to hit the **REAL** dependency (full integration)
 2. Allow your test to hit a fake dependency (mock)
 3. Prevent your test from making a call and give it a fake result (stub)
 
